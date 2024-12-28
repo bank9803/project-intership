@@ -1,0 +1,149 @@
+/* General layout */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  min-height: 100vh;      /* Full viewport height */
+  background-color: #e9ecef;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Todo list styling */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:hover {
+  background-color: #f1f3f5;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-details {
+  flex-grow: 1;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Due date */
+.todo-due-date {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Input fields */
+.input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #495057;
+  outline: none;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button, .save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-button:hover, .save-button:hover {
+  background-color: #218838;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Success message */
+.success-message {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Add/Edit Section */
+.add-section, .edit-section {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #495057;
+}
